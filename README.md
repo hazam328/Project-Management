@@ -11,10 +11,9 @@ _**Final Project Management System**_
 
 **3.** **Import** _Project managemnt_ folder from _File_ > _Open_
 
-**4.** **Install** recommended _Libraries_ from IDE _terminal_
+**4.** **Install** recommended _Libraries_ from IDE _terminal_ using following commands:
 
 =>   **Pip** install _flask_
-
 
 =>   **Pip** install sqlalchemey
 
