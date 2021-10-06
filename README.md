@@ -14,5 +14,7 @@ _**Final Project Management System**_
 **4.** **Install** recommended _Libraries_ from IDE _terminal_
 
 =>   **Pip** install _flask_
+
+
 =>   **Pip** install sqlalchemey
 
