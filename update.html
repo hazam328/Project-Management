@@ -1,0 +1,312 @@
+{%block body%}
+<head>
+    <title>Admin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="/admin_form" class="active">Home</a>
+  <a href="/batches_sessions">Batch sessions</a>
+  <a href="/teachers">Teachers</a>
+  <a href="/output">Result</a>
+  <a href="/login" style="float:right;font-weight:1000">Logout</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h2 style="font-family:'Courier New'">Welcome To The Final Project Management App</h2>
+</div>
+<h1 style="text-align:center;font-weight:1000;">Manage Projects</h1>
+<div class="container">
+  <form class = "form-horizontal" action="{{url_for('update', id = id)}}" method="post">
+    <div class="form-group">
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" value="{{stud.name}}" name="name" placeholder="Student name.." >
+      </div>
+     </div>
+    </div>
+    <div class="form-group">
+    <div class="row">
+      <div class="col-25">
+        <label for="rollno">Roll No.</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="rollno" value="{{stud.roll_no}}" name="rollno" placeholder="Roll no..">
+      </div>
+    </div>
+      </div>
+    <div class="form-group">
+    <div class="row">
+      <div class="col-25">
+        <label for="team1">Team Member 1</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="team1" value="{{stud.team_member1}}" name="team1" placeholder="Member 1..">
+      </div>
+    </div>
+      </div>
+    <div class="form-group">
+        <div class="row">
+      <div class="col-25">
+        <label for="team2">Team Member 2</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="team2" value="{{stud.team_member2}}" name="team2" placeholder="Member 2..">
+      </div>
+    </div>
+    </div>
+       <div class="form-group">
+        <div class="row">
+      <div class="col-25">
+        <label for="fproject">Final Project </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fproject" value="{{stud.final_project}}" name="fproject" placeholder="Final Project..">
+      </div>
+    </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+      <div class="col-25">
+        <label for="supervisor">Supervisor</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="supervisor" value="{{stud.supervisor}}" name="supervisor" placeholder="Supervisor..">
+      </div>
+    </div>
+    </div>
+    <div class="form-group">
+    <div class="row">
+      <div class="col-25">
+        <label for="batch">Batch</label>
+      </div>
+      <div class="col-75">
+        <select id="batch" name="batch">
+          <option value="BSCS-EVENING">BSCS-EVENING</option>
+          <option value="BSCS-MORNING">BSCS-MORNING</option>
+          <option value="BSIT-EVENING">BSIT-EVENING</option>
+          <option value="BSIT-MORNING">BSIT-MORNING</option>
+        </select>
+      </div>
+    </div>
+    </div>
+    <div class="form-group">
+          <div class="row">
+      <div class="col-25">
+        <label for="sessions">Session</label>
+      </div>
+      <div class="col-75">
+        <select id="sessions" name="sessions">
+          <option value="2017-21">2017-21</option>
+          <option value="2018-22">2018-22</option>
+          <option value="2019-23">2019-23</option>
+          <option value="2020-24">2020-24</option>
+        </select>
+      </div>
+    </div>
+    </div>
+      <br>
+    <div class="form-group">
+    <div class="outputbtn">
+      <input type="submit" value= "Submit">
+    </div>
+    </div>
+  </form>
+</div>
+{%endblock%}
+
