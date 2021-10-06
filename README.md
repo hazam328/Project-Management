@@ -1,12 +1,12 @@
 
-_**Final Project Management System**_
+__**Final Project Management System**__
 
 **__Note__**: 
 
-**1.** Place all files in a folder **eg:**  _'project_management'_  > Then place all the HTML files in 'templates' folder or create a new one _'templates'_ .
+**1.** Place all files in a folder **eg:**  _'project_management'_  > Then place all the HTML files in 'templates' folder or create a new one _'templates'_
 
 
-**2.** **Install**  Any IDE _(Pycharm)_.
+**2.** **Install**  Any IDE _(Pycharm)_
 
 
 **3.** **Import** _Project managemnt_ folder from _File_ > _Open_
