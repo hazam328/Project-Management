@@ -6,9 +6,7 @@ from datetime import datetime
 # from sqlalchemy.orm import scoped_session, sessionmaker
 
 app = Flask(__name__)
-# url = "https:cms.mlcs.xyz/api/view/teaching_staff/all/"
-# batches_sessions= request.gets("https:cms.mlcs.xyz/api/view/bscs_2017/all/")
-# teachers= request.get("https:cms.mlcs.xyz/api/view/teaching_staff/all/")
+
 
 db = SQLAlchemy()
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:Pashtoon-328@localhost:3306/project_management"
