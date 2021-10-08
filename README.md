@@ -17,3 +17,14 @@ __**Final Project Management System**__
 
 =>   **Pip** install sqlalchemey
 
+=>   **Open** Terminal in _IDE_ and type _python3 main.py
+
+**Login** form details:
+
+
+Username: hazam 
+
+Password: 12345
+
+ (_note_: you can change these details in main.py )
+ 
