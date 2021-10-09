@@ -1,6 +1,8 @@
 
 __**Final Project Management System**__
 
+It Is A Web App Of  __Final Project Management__  For Computer Science Students. Through Which  _Final Project_ Details Can Be Easily Managed With **_Database_** Include
+
 **__Note__**: You Can Download The Zip File and Ignore the **First** **Step** And Follow From Second **Step** _Below_
 
 **1.** **Place** all files in a folder **eg:**  _'project_management'_  > Then place all the HTML files in 'templates' folder or create a new one _'templates'_
@@ -22,9 +24,9 @@ __**Final Project Management System**__
 **Login** form details:
 
 
-Username: hazam 
+**Username**: hazam 
 
-Password: 12345
+**Password**: 12345
 
- (_note_: you can change login form details in main.py )
+ (**_note_**: you can change login form details in _'main.py'_ )
  
