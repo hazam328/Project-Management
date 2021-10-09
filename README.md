@@ -26,5 +26,5 @@ Username: hazam
 
 Password: 12345
 
- (_note_: you can change these details in main.py )
+ (_note_: you can change login form details in main.py )
  
