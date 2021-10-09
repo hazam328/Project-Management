@@ -17,7 +17,7 @@ __**Final Project Management System**__
 
 =>   **Pip** install sqlalchemey
 
-=>   **Open** Terminal in _IDE_ and type _python3 main.py
+=>   **Open** Terminal in _IDE_ and type _python3 main.py_
 
 **Login** form details:
 
