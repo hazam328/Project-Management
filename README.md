@@ -19,7 +19,7 @@ It Is A Web App Of  __Final Project Management__  For Computer Science Students.
 
 =>   **Pip** install sqlalchemey
 
-=>   **Open** Terminal in _IDE_ and type _python3 app.py_
+=>   **Open** Terminal in _IDE_ and type _python3 app.py_ or simply press _'shift+F10'_
 
 **Login** form details:
 
