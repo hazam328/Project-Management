@@ -28,5 +28,5 @@ It Is A Web App Of  __Final Project Management__  For Computer Science Students.
 
 **Password**: 12345
 
- (**_note_**: you can change login form details in _'main.py'_ )
+ (**_note_**: you can change login form details in _'app.py'_ )
  
